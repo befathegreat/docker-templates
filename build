@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker buildx build -t debian-template:bullseye-slim -f debian/Dockerfile .

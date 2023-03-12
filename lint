@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for DOCKERFILE in $(find . -name "Dockerfile"); do
+    echo "Linting ${DOCKERFILE} with hadolint";
+    docker run -i --rm hadolint/hadolint < "${DOCKERFILE}";
+done
