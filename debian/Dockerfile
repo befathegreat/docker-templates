@@ -8,6 +8,7 @@ RUN \
   apt-get update && \
   apt-get install --yes --no-install-recommends \
     curl=7.74.0-1.3+deb11u7 \
+    ca-certificates=20210119 \
     && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
